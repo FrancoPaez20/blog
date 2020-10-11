@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- <meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="subject" content="your website's subject">
+	<meta name="language" content="ES">
+	<meta name="robots" content="index,follow" />
+	<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
+	<meta name="abstract" content="">
+	<meta name="topic" content="">
+	<meta name="summary" content="">
+	<meta name="designer" content="">
+	<meta name="reply-to" content="email@hotmail.com">
+	<meta name="owner" content="">
+	<meta name="url" content="http://www.websiteaddrress.com">
+	<meta name="identifier-URL" content="http://www.websiteaddress.com">
+	<meta name="directory" content="submission">
+	<meta name="category" content="">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="author" content="Franco Paez, email@hotmail.com">
+	<meta name="revisit-after" content="7 days">
+	<meta name="Classification" content="Business">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/> -->
+	<meta name="copyright"content="Franco Paez">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#181818">
+    <title>Franco Nahuel Paez</title>
+    
+	<script src="https://kit.fontawesome.com/fc69885e8b.js" crossorigin="anonymous"></script>
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp">
+
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/dark-mode.css">
+</head>
+<body>
+
+    <figure class="cover">
+        <img class="image inverted" src="https://francopaez20.github.io/slider/img/3.jpg" alt="">
+    </figure>
+
+    <div class="container">
+        <h1 class="container-tittle">Katy Perry’s new album Smile goes back to bright’n’boring basics</h1>
+        <div class="info">
+			<div class="author">
+				<figure class="author-profile"> <!-- author image -->
+					<img class="image inverted" src="https://lh3.googleusercontent.com/proxy/NfesudJ6Nc87RjfO-AR8ncp5ExDpk4gNUdJKAMThzpoUL2ImxVyBvjTsKPKBlnROnteswbCEhdPZMD-1t5Zu9D12HW80ftyphDLuOL844OCnF9lEl1kBi7xkWJj1ocRA2vjEcAGcDPZ7jwmQagypIuPDtYqW" alt="Foto del autor">
+				</figure>
+				<p class="author-name">Katy Perry</p>
+			</div>
+
+			<div class="publication-date">
+				<p class="date-text">01 - 01 - 2000</p>
+				<i class="far fa-calendar"></i>
+			</div>
+			
+        </div>
+        
+        <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nesciunt culpa accusamus in excepturi eius, cumque maiores ratione suscipit, provident aperiam. Maxime aut, minima maiores sint iure quasi nihil soluta voluptates, doloribus dignissimos laborum doloremque praesentium numquam quae sunt illo molestiae odit a veniam! Ratione adipisci nihil numquam quod labore. Harum placeat eos voluptatibus quae? Atque necessitatibus, distinctio fuga ad facere itaque maxime neque, id rerum harum adipisci aut exercitationem qui doloribus dignissimos dolorum autem totam. Ut explicabo minima adipisci, qui labore facere veritatis fuga officia consequatur? Totam dolorum fuga eius voluptatem libero voluptatum debitis laboriosam excepturi impedit ea officiis reprehenderit id odio laborum, vitae, eos odit veritatis, repellendus numquam repellat quam! Tempora eaque sunt ducimus aut totam. Veritatis aliquam, aperiam ducimus eos placeat exercitationem nihil magni natus unde nam ut laboriosam, ad, reiciendis provident quas voluptatibus accusamus porro at, facilis magnam velit rem omnis. Officiis magnam, sit consequatur nulla eveniet voluptas molestias optio nisi blanditiis, in ab corrupti ducimus soluta dolorum fugit ut. Ducimus totam, perspiciatis officiis excepturi. Dignissimos quasi consequuntur explicabo debitis odit atque, quisquam accusamus dolorem dolorum enim pariatur quae earum distinctio adipisci vero repellendus similique minima sapiente quidem omnis! Eos dignissimos sequi eaque ipsa laborum expedita quas. Consequatur necessitatibus explicabo dignissimos, voluptatem ab officiis incidunt totam aperiam omnis nostrum distinctio earum id quisquam enim placeat dicta adipisci nesciunt porro tenetur, cumque a temporibus. Vero eaque ullam, voluptatibus, sunt ea perspiciatis ad? Maiores eligendi alias sequi cumque, iure dolor, fugiat pariatur deserunt ullam non dolore corrupti obcaecati.</p>
+
+	</div>
+	
+	<span class="light-dark-mode" id="toggle">
+		<span class="material-icons">brightness_6</span>
+	</span>
+
+	<script>
+
+		let toggle = document.getElementById('toggle')
+
+		toggle.addEventListener('click', toggleLightDark);
+
+		function toggleLightDark(){
+
+			document.documentElement.classList.toggle('dark-mode')
+			document.querySelectorAll('.inverted').forEach((result =>{
+
+				result.classList.toggle('invert')
+			}))
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+
+	/*colores*/
+	--blanco: #fff;
+	--blancoGris: #fafafa;
+	--negro: #000;;
+	font-size: 16px;
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*INICIO SCROLL BAR*/
+::-webkit-scrollbar{
+
+	width: 6px;
+	background-color: var(--blanco);;
+}
+
+::-webkit-scrollbar-thumb{
+
+	border-radius: 0px;
+	background: #282828;
+}
+/*FIN SCROLL BAR*/
+
+body{
+
+	background-color: #fff;
+}
+
+.cover{
+
+	width: 100%;
+	height: clamp(200px, 35vmax, 500px);
+}
+
+.cover .image{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	object-position: center;
+	-o-object-position: center;
+}
+
+.container{
+
+	max-width: 700px;
+	width: 100%;
+	padding: 50px 10px;
+	margin: auto;
+}
+
+.container-tittle{
+
+	font-size: clamp(2rem, 5vmin, 2.5rem);
+}
+
+.info{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 50px 0;
+	flex-wrap: wrap;
+}
+
+.author{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author-profile{
+	
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	overflow: hidden;
+	margin-right: 1rem;
+}
+
+.author-profile .image{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	object-position: center;
+	-o-object-position: center;
+}
+
+.author-name{
+
+	font-size: 1.125rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.publication-date{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.publication-date .date-text{
+
+	padding: 0 1rem;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.blog{
+
+	font-size: 1.125rem;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 579px){
+
+	.info{
+
+		flex-direction: column;
+		-ms-flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.author{
+
+		order: 2;
+		margin-top: 1rem;
+	}
+
+	.publication-date .date-text	{
+
+		order: 2;
+	}
+}
